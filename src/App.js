@@ -14,13 +14,13 @@ function App() {
      {
      user ? ( 
       <>
-      <NavBar user={user} setUser={setUser}/>
+      <NavBar/>
      <Routes>
         <Route path="/orders/new" element={<NewOrderPage/>} />
         <Route path="/orders" element={<OrderHistoryPage/>} />
       </Routes>
       </>
-         ): (<AuthPage setUser={setUser}/>)
+         ): (<AuthPage/>)
      }
     </main>
   );
